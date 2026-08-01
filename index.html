@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>บริษัท เจาะวางท่อ (ตัวอย่าง) จำกัด</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Sarabun', sans-serif; background-color: #f8f9fa; }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- แถบ Top bar (ข้อมูลติดต่อ) -->
+    <div class="bg-blue-900 text-white text-xs md:text-sm py-2 px-4">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div>📞 ติดต่อ โทร. 081-XXX-XXXX | 📱 Line: @example</div>
+            <div class="mt-1 md:mt-0">✉️ Email: info@example.com</div>
+        </div>
+    </div>
+
+    <!-- Header (โลโก้ และ ช่องค้นหา) -->
+    <header class="bg-white shadow-sm py-6 px-4">
+        <div class="max-w-6xl mx-auto flex items-center justify-between">
+            <div>
+                <h1 class="text-2xl font-bold text-blue-700">บริษัท ตัวอย่าง จำกัด</h1>
+                <p class="text-gray-500 text-sm mt-1">บริการงานรับเหมา และ วางระบบครบวงจร</p>
+            </div>
+            <!-- ช่องค้นหา (Search) -->
+            <div class="hidden md:flex">
+                <input type="text" placeholder="ค้นหาสินค้า/บริการ..." class="border border-gray-300 rounded-l-md px-3 py-1 focus:outline-none focus:border-blue-500">
+                <button class="bg-blue-600 text-white px-4 py-1 rounded-r-md hover:bg-blue-700">ค้นหา</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- แถบเมนูหลัก (Navigation) -->
+    <nav class="bg-blue-600 text-white sticky top-0 z-50 shadow-md">
+        <div class="max-w-6xl mx-auto flex overflow-x-auto whitespace-nowrap">
+            <a href="#" class="bg-blue-800 px-6 py-3 font-medium hover:bg-blue-700 transition">หน้าแรก</a>
+            <a href="#" class="px-6 py-3 font-medium hover:bg-blue-700 transition">สินค้า / บริการ</a>
+            <a href="#" class="px-6 py-3 font-medium hover:bg-blue-700 transition">เกี่ยวกับเรา</a>
+            <a href="#" class="px-6 py-3 font-medium hover:bg-blue-700 transition">บทความ</a>
+            <a href="#" class="px-6 py-3 font-medium hover:bg-blue-700 transition">ติดต่อเรา</a>
+        </div>
+    </nav>
+
+    <!-- พื้นที่เนื้อหาหลัก (แบ่งเป็น 2 คอลัมน์) -->
+    <main class="max-w-6xl mx-auto my-8 px-4 flex flex-col md:flex-row gap-6">
+        
+        <!-- แถบด้านซ้าย (Sidebar) -->
+        <aside class="w-full md:w-1/4">
+            <!-- กล่องหมวดหมู่ -->
+            <div class="bg-white border border-gray-200 rounded-md overflow-hidden mb-6 shadow-sm">
+                <div class="bg-gray-100 text-gray-800 font-bold px-4 py-3 border-b border-gray-200">หมวดหมู่ทั้งหมด</div>
+                <ul class="divide-y divide-gray-100">
+                    <li><a href="#" class="block px-4 py-2 hover:bg-blue-50 text-gray-700 hover:text-blue-600 text-sm">▶ รายการสินค้า 1</a></li>
+                    <li><a href="#" class="block px-4 py-2 hover:bg-blue-50 text-gray-700 hover:text-blue-600 text-sm">▶ รายการสินค้า 2</a></li>
+                    <li><a href="#" class="block px-4 py-2 hover:bg-blue-50 text-gray-700 hover:text-blue-600 text-sm">▶ รูปผลงาน / โครงการ</a></li>
+                </ul>
+            </div>
+
+            <!-- กล่องข้อมูลติดต่อด่วน -->
+            <div class="bg-white border border-gray-200 rounded-md p-4 text-center shadow-sm">
+                <h3 class="font-bold text-gray-700 mb-2">สอบถามข้อมูลเพิ่มเติม</h3>
+                <p class="text-xl font-bold text-red-600 mb-1">081-566-XXXX</p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/LINE_logo.svg" alt="Line" class="w-8 h-8 mx-auto my-2">
+                <p class="text-sm text-gray-500">ID: @example</p>
+            </div>
+        </aside>
+
+        <!-- พื้นที่เนื้อหาด้านขวา (Content Area) -->
+        <div class="w-full md:w-3/4">
+            
+            <!-- แบนเนอร์ (Banner) -->
+            <div class="bg-white p-2 border border-gray-200 mb-6 rounded-md shadow-sm">
+                <div class="bg-gray-200 h-48 md:h-72 flex items-center justify-center text-gray-500 rounded">
+                    [ พื้นที่ใส่ภาพแบนเนอร์ / ภาพหน้างาน ]
+                </div>
+            </div>
+
+            <!-- กล่องบริการ/สินค้า (Grid) -->
+            <h2 class="text-xl font-bold text-blue-800 mb-4 border-b-2 border-blue-600 pb-2 inline-block w-full">บริการและสินค้าเด่น</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+                <!-- รายการที่ 1 -->
+                <div class="bg-white border border-gray-200 p-4 rounded-md hover:shadow-md transition">
+                    <div class="bg-gray-200 h-40 mb-3 rounded flex items-center justify-center text-gray-400">[ รูปภาพ 1 ]</div>
+                    <h3 class="font-bold text-lg text-gray-800 mb-2">บริการที่ 1</h3>
+                    <p class="text-sm text-gray-600 line-clamp-2">รายละเอียดเบื้องต้นของบริการนี้ อธิบายสั้นๆ เพื่อให้ลูกค้าเข้าใจ...</p>
+                    <a href="#" class="inline-block mt-3 text-blue-600 text-sm font-medium hover:underline">รายละเอียดเพิ่มเติม &raquo;</a>
+                </div>
+                <!-- รายการที่ 2 -->
+                <div class="bg-white border border-gray-200 p-4 rounded-md hover:shadow-md transition">
+                    <div class="bg-gray-200 h-40 mb-3 rounded flex items-center justify-center text-gray-400">[ รูปภาพ 2 ]</div>
+                    <h3 class="font-bold text-lg text-gray-800 mb-2">บริการที่ 2</h3>
+                    <p class="text-sm text-gray-600 line-clamp-2">รายละเอียดเบื้องต้นของบริการนี้ อธิบายสั้นๆ เพื่อให้ลูกค้าเข้าใจ...</p>
+                    <a href="#" class="inline-block mt-3 text-blue-600 text-sm font-medium hover:underline">รายละเอียดเพิ่มเติม &raquo;</a>
+                </div>
+            </div>
+
+            <!-- บทความอัปเดต -->
+            <h2 class="text-xl font-bold text-blue-800 mb-4 border-b-2 border-blue-600 pb-2 inline-block w-full">บทความ / สาระน่ารู้</h2>
+            <div class="bg-white border border-gray-200 rounded-md p-4 shadow-sm">
+                <ul class="space-y-3">
+                    <li class="border-b border-gray-100 pb-2"><a href="#" class="text-blue-600 hover:underline">ประโยชน์ของเทคโนโลยีการวางท่อใต้ดิน</a> <span class="text-xs text-gray-400 ml-2">01/08/2026</span></li>
+                    <li><a href="#" class="text-blue-600 hover:underline">วิธีการเลือกผู้รับเหมาที่มีความน่าเชื่อถือ</a> <span class="text-xs text-gray-400 ml-2">25/07/2026</span></li>
+                </ul>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white pt-10 pb-6 border-t-4 border-blue-600">
+        <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            <div>
+                <h4 class="text-lg font-bold mb-4 border-b border-gray-600 pb-2">เกี่ยวกับบริษัท</h4>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                    บริษัท ตัวอย่าง จำกัด มุ่งมั่นให้บริการด้วยมาตรฐานสากล ด้วยทีมงานที่มีประสบการณ์และเครื่องจักรที่ทันสมัย
+                </p>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold mb-4 border-b border-gray-600 pb-2">ติดต่อเรา</h4>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                    📍 123/45 ถนนตัวอย่าง เขตพื้นที่<br>
+                    กรุงเทพมหานคร 10000<br>
+                    📞 โทรศัพท์: 081-XXX-XXXX<br>
+                    ✉️ อีเมล: contact@example.com
+                </p>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold mb-4 border-b border-gray-600 pb-2">สถิติเว็บไซต์</h4>
+                <p class="text-gray-400 text-sm">
+                    เปิดเว็บเมื่อ : 01/01/2026<br>
+                    ปรับปรุงเว็บเมื่อ : 01/08/2026<br>
+                    ผู้ชมทั้งหมด : 99,999
+                </p>
+            </div>
+        </div>
+        <div class="text-center text-gray-500 text-xs border-t border-gray-700 pt-6">
+            &copy; 2026 บริษัท ตัวอย่าง จำกัด All Right Reserved.
+        </div>
+    </footer>
+
+</body>
+</html>

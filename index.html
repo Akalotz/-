@@ -10,6 +10,21 @@
     <style>
         body { font-family: 'Sarabun', sans-serif; background-color: #f3f4f6; }
     </style>
+
+    <style>
+  .hover-link {
+    color: #333333; /* สีข้อความปกติ */
+    cursor: pointer; /* เปลี่ยนรูปเมาส์เป็นรูปมือ */
+    transition: color 0.2s ease, text-decoration 0.2s ease; /* เพิ่มความนุ่มนวลเวลาเปลี่ยนสี */
+  }
+
+  /* เมื่อเอาเมาส์ไปชี้ (Hover) */
+  .hover-link:hover {
+    color: #0066cc; /* เปลี่ยนเป็นสีฟ้า (หรือสีที่ต้องการ) */
+    text-decoration: underline; /* ขีดเส้นใต้เพื่อจำลองลักษณะของลิงก์ */
+  }
+</style>
+
 </head>
 <body class="text-gray-800 flex flex-col min-h-screen">
 
@@ -49,7 +64,7 @@
 
         <!-- ภาพรอง 4 ภาพ แสดงผลงานในบ่อ -->
         <section>
-            <h3 class="text-xl font-bold text-blue-900 mb-4 border-l-4 border-blue-600 pl-3">ผลงานการปฏิบัติงานจริงในพื้นที่</h3>
+            <h3 class="text-xl font-bold text-blue-900 mb-4 border-l-4 border-blue-600 pl-3">ผลงานการดันท่อลอดในการปฏิบัติงานจริงในพื้นที่</h3>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 
                 <!-- ภาพรองที่ 1 -->
@@ -111,9 +126,70 @@
             </div>
         </section>
 
+    <section>
+            <h3 class="text-xl font-bold text-blue-900 mb-4 border-l-4 border-blue-600 pl-3">ผลงานการปฏิบัติงานจริงด้วยเครื่อง HDD ในพื้นที่</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                <div class="bg-white p-4 rounded-xl shadow-md border border-gray-200 flex flex-col justify-between">
+                    <div>
+                        <div class="overflow-hidden rounded-lg mb-3 bg-gray-100 cursor-pointer group relative" onclick="openModal('img/06.jpg', '')">
+                            <img src="img/06.jpg" alt="การเชื่อมประกอบและตรวจสอบแนวท่อ" class="w-full h-64 object-cover group-hover:scale-105 transition duration-300">
+                            <div class="absolute bottom-2 right-2 bg-black bg-opacity-60 text-white text-xs px-2 py-1 rounded">🔍 คลิกเพื่อขยายภาพ</div>
+                        </div>
+                        <h4 class="font-bold text-gray-800 text-lg mb-1">การเตรียมความพร้อมและวางแนวอุปกรณ์</h4>
+                    </div>
+                    <p class="text-gray-600 text-sm mt-2 border-t pt-2">
+                       การลำเลียงหัวเจาะขยายรู (Hole Opener) ทรงกรวยฝังปุ่มคาร์ไบด์สำหรับบดอัดชั้นดิน พร้อมทั้งจัดแนวสายส่งของเหลวและก้านเจาะไปตามพื้นที่ปฏิบัติงานเพื่อเตรียมเชื่อมต่อระบบเข้ากับเครื่องจักรหลัก
+                </div>
+
+                <div class="bg-white p-4 rounded-xl shadow-md border border-gray-200 flex flex-col justify-between">
+                    <div>
+                        <div class="overflow-hidden rounded-lg mb-3 bg-gray-100 cursor-pointer group relative" onclick="openModal('img/07.jpg', 'การปฏิบัติงานด้วยเครื่องเจาะแนวนอน')">
+                            <img src="img/07.jpg" alt="การเชื่อมประกอบและตรวจสอบแนวท่อ" class="w-full h-64 object-cover group-hover:scale-105 transition duration-300">
+                            <div class="absolute bottom-2 right-2 bg-black bg-opacity-60 text-white text-xs px-2 py-1 rounded">🔍 คลิกเพื่อขยายภาพ</div>
+                        </div>
+                        <h4 class="font-bold text-gray-800 text-lg mb-1">การปฏิบัติงานด้วยเครื่องเจาะแนวนอน</h4>
+                    </div>
+                    <p class="text-gray-600 text-sm mt-2 border-t pt-2">
+                      การขับเคลื่อนด้วยเครื่องเจาะแนวนอน (Horizontal Directional Drilling Rig) โครงสร้างเสาตั้งสีเหลือง ซึ่งปฏิบัติงานร่วมกับบ่อพักคอนกรีตและระบบน้ำโคลนหล่อลื่น (Drilling Slurry) โดยมีทีมช่างควบคุมการขับเคลื่อนก้านเจาะและหัวเจาะลงสู่ใต้ดิน
+                </div>
+                
+                <div class="bg-white p-4 rounded-xl shadow-md border border-gray-200 flex flex-col justify-between">
+                    <div>
+                        <div class="overflow-hidden rounded-lg mb-3 bg-gray-100 cursor-pointer group relative" onclick="openModal('img/08.jpg', 'การควบคุมและตรวจสอบการขับเคลื่อนก้านเจาะ')">
+                            <img src="img/08.jpg" alt="การเชื่อมประกอบและตรวจสอบแนวท่อ" class="w-full h-64 object-cover group-hover:scale-105 transition duration-300">
+                            <div class="absolute bottom-2 right-2 bg-black bg-opacity-60 text-white text-xs px-2 py-1 rounded">🔍 คลิกเพื่อขยายภาพ</div>
+                        </div>
+                        <h4 class="font-bold text-gray-800 text-lg mb-1">การควบคุมและตรวจสอบการขับเคลื่อนก้านเจาะ</h4>
+                    </div>
+                    <p class="text-gray-600 text-sm mt-2 border-t pt-2">
+                     การปฏิบัติงานต่อเนื่องของทีมช่างและวิศวกรในการควบคุมและสังเกตการณ์การเคลื่อนที่ของก้านเจาะและหัวเจาะขยายรู ณ บริเวณบ่อพัก เพื่อให้มั่นใจว่าแนวเจาะเป็นไปตามแผนงานที่กำหนดอย่างแม่นยำและปลอดภัย
+                </div>
+                
+                 <div class="bg-white p-4 rounded-xl shadow-md border border-gray-200 flex flex-col justify-between">
+                    <div>
+                        <div class="overflow-hidden rounded-lg mb-3 bg-gray-100 cursor-pointer group relative" onclick="openModal('img/09.png', 'การทำงานจริงของระบบเครื่องเจาะดันลอดท่อ')">
+                            <img src="img/09.png" alt="การเชื่อมประกอบและตรวจสอบแนวท่อ" class="w-full h-64 object-cover group-hover:scale-105 transition duration-300">
+                            <div class="absolute bottom-2 right-2 bg-black bg-opacity-60 text-white text-xs px-2 py-1 rounded">🔍 คลิกเพื่อขยายภาพ</div>
+                        </div>
+                        <span class="hover-link" onclick="window.open('https://youtu.be/DWYg0FUu_ko?si=9WKYMK40zuci9z3G', '_blank')">
+                        <h4 class="font-bold text-gray-800 text-lg mb-1">การทำงานจริงของเครื่องเจาะ (คลิกเพื่อดูคลิปเต็ม)</h4>
+                      </span>
+                        
+                   
+                    <p class="text-gray-600 text-sm mt-2 border-t pt-2">
+                    โดยหัวเจาะด้านหน้ากำลังหมุนบดอัดและขุดเจาะชั้นดินพร้อมเศษหินอย่างต่อเนื่อง พร้อมทั้งลำเลียงวัสดุที่ขุดได้ผ่านระบบเกลียวภายในเพื่อระบายออกทางช่องด้านข้างของชุดขับเคลื่อนสีเหลือง ขณะเดียวกันกระบอกไฮดรอลิกกำลังปฏิบัติงานเพื่อดันแนวท่อเหล็กสีฟ้าให้เคลื่อนตัวรุดหน้าไปตามแนวเจาะใต้ดินอย่างมั่นคงและมีเสถียรภาพ
+                    </a>
+                </div>
+
+
+
+
+    </section>
+
         <!-- Contact Call to Action Section -->
         <section class="bg-blue-900 text-white p-8 rounded-xl text-center shadow-lg space-y-4">
-            <h3 class="text-2xl font-bold">หากสนใจ หรือต้องการประเมินราคา?</h3>
+            <h3 class="text-2xl font-bold">หากสนใจ หรือ ต้องการประเมินราคา?</h3>
             <p class="text-blue-200 text-sm max-w-xl mx-auto">
                 ติดต่อสอบถามรายละเอียดเพิ่มเติมได้ตลอดเวลา ที่
             </p>
